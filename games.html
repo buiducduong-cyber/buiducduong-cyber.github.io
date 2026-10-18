@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách game | GameZone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="site">
+<header>
+    <a class="logo" href="index.html">Game<span>Zone</span></a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="games.html">Game</a>
+        <a href="news.html">Tin tức</a>
+        <a href="ranking.html">BXH</a>
+    </nav>
+</header>
+<main>
+
+    <h1 class="page-title">DANH SÁCH GAME</h1>
+
+    <div class="search-area">
+        <label for="gameSearch">Tìm kiếm game</label>
+        <input id="gameSearch" type="search"
+               placeholder="Nhập tên game muốn tìm...">
+
+        <div class="filter-row">
+            <label for="genreFilter">Thể loại</label>
+            <select id="genreFilter">
+                <option value="all">Tất cả thể loại</option>
+                <option value="JRPG">JRPG</option>
+                <option value="Hành động, thế giới mở">Hành động, thế giới mở</option>
+                <option value="Đua xe">Đua xe</option>
+                <option value="Sandbox, sinh tồn">Sandbox, sinh tồn</option>
+                <option value="MOBA">MOBA</option>
+                <option value="Battle Royale, hành động">Battle Royale, hành động</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="game-grid">
+        <a class="game-card catalog-card"
+           data-name="Persona 5 Royal"
+           data-genre="JRPG"
+           href="detail.html?game=persona-5-royal">
+            <div class="game-image image-placeholder">
+                <img src="https://cdn.awsli.com.br/600x1000/53/53761/produto/121674710/05bdcba7fc.jpg" alt="Persona 5 Royal" class="" onerror="this.style.display='none'; this.parentElement.classList.add('empty-image');">
+            </div>
+            <div class="game-info">Persona 5 Royal</div>
+        </a>
+        <a class="game-card catalog-card"
+           data-name="Grand Theft Auto V"
+           data-genre="Hành động, thế giới mở"
+           href="detail.html?game=gta-v">
+            <div class="game-image image-placeholder">
+                <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/infopro/WKGJBQRWQRL7ZOCD3BBN5OOIB4.jpg" alt="Grand Theft Auto V" class="" onerror="this.style.display='none'; this.parentElement.classList.add('empty-image');">
+            </div>
+            <div class="game-info">Grand Theft Auto V</div>
+        </a>
+        <a class="game-card catalog-card"
+           data-name="Forza Horizon"
+           data-genre="Đua xe"
+           href="detail.html?game=forza-horizon">
+            <div class="game-image image-placeholder">
+                <img src="https://img.drz.lazcdn.com/static/lk/p/c4586ee7fae09aa5e24802372d18a3cd.jpg_720x720q80.jpg_.webp" alt="Forza Horizon" class="" onerror="this.style.display='none'; this.parentElement.classList.add('empty-image');">
+            </div>
+            <div class="game-info">Forza Horizon</div>
+        </a>
+        <a class="game-card catalog-card"
+           data-name="Minecraft"
+           data-genre="Sandbox, sinh tồn"
+           href="detail.html?game=minecraft">
+            <div class="game-image image-placeholder">
+                <img src="https://cdn.mos.cms.futurecdn.net/v2/t%3A0%2Cl%3A448%2Ccw%3A1152%2Cch%3A1152%2Cq%3A80%2Cw%3A1152/ek49eytUbtkHvRB6Nbikg4.jpg" alt="Minecraft" class="" onerror="this.style.display='none'; this.parentElement.classList.add('empty-image');">
+            </div>
+            <div class="game-info">Minecraft</div>
+        </a>
+        <a class="game-card catalog-card"
+           data-name="League of Legends"
+           data-genre="MOBA"
+           href="detail.html?game=league-of-legends">
+            <div class="game-image image-placeholder">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="League of Legends" class="" onerror="this.style.display='none'; this.parentElement.classList.add('empty-image');">
+            </div>
+            <div class="game-info">League of Legends</div>
+        </a>
+        <a class="game-card catalog-card"
+           data-name="Fortnite"
+           data-genre="Battle Royale, hành động"
+           href="detail.html?game=fortnite">
+            <div class="game-image image-placeholder">
+                <img src="https://citybrawl.com/data/image/fornite.jpg" alt="Fortnite" class="" onerror="this.style.display='none'; this.parentElement.classList.add('empty-image');">
+            </div>
+            <div class="game-info">Fortnite</div>
+        </a>
+    </div>
+    <p id="noResults" class="hidden">Không tìm thấy game phù hợp.</p>
+
+</main>
+<footer>
+    <h3>GameZone</h3>
+    <p>Website giới thiệu, đánh giá và cập nhật thông tin trò chơi điện tử.</p>
+    <p>Liên hệ: contact@gamezone.example</p>
+    <p>© 2026 GameZone. Nội dung phục vụ mục đích học tập.</p>
+</footer>
+</div>
+</body>
+</html>
